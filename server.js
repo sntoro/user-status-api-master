@@ -13,9 +13,9 @@ app.use(express.urlencoded({
 }));
 
 // force: true will drop the table if it already exists
-db.sequelize.sync({force: false}).then(() => {
-    //create data for role
-    // create_roles();
+db.sequelize.sync({force: true}).then(() => {
+    //insert data for role
+    create_roles();
 });
 
 require('./app/router/router.js')(app);
