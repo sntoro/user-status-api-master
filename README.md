@@ -21,4 +21,4 @@ id, name, email, password, roles[]
 2. POST http://localhost:8080/api/auth/signin
 id, password
 
-3 GET http://localhost:8080/api/status
+3. GET http://localhost:8080/api/status
